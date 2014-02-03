@@ -1,0 +1,23 @@
+<div id="at_showcase">
+	<div class="at_blog_cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+	    <div class="at_showcase_overlay {{#if @blog.cover}}at_with_blog_cover{{/if}}">
+			<div class="row">
+				<div class="large-12 large-centered columns">
+					<div class="at_block">
+						<div class="text-center">
+				            {{#post}}
+				            <div class="at_block">
+				                <article class="{{post_class}}">
+				                    <div class="at_post_header">
+				                        <h2 class="at_post_title">{{{title}}}</h2>
+				                    </div>
+				                </article>
+				            </div>
+				            {{/post}}
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>

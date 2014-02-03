@@ -1,0 +1,83 @@
+@import "variables";
+
+//*-----------------------------------------
+//* Disqus
+//*-----------------------------------------
+#at_disqus {
+    margin: 2rem auto;
+}
+
+//*-----------------------------------------
+//* Search
+//*-----------------------------------------
+#at_search {
+	position: relative;
+	.at_search_input {
+		color: #fff;
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 3px;
+		margin: 0.5rem auto;
+		box-shadow: none;
+		@media #{$small-only} {
+			width: 80%;
+			margin: 1rem auto 1.5rem auto;
+		}
+	}
+}
+.at_search_clear_toggle {
+	color: #D94439;
+	cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1px;
+    line-height: 1;
+}
+.at_search_results {
+	color: $base_text_color;
+	background: darken($base_background_color, 5%);
+	border: 1px solid darken($base_background_color, 10%);
+	border-radius: 3px;
+	position: absolute;
+	z-index: 101;
+	text-align: left;
+	margin-top: 5px;
+	padding: 15px;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	&.at_search_active {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.at_search_results_amount {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    display: block;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.at_search_results_title {
+    display: block;
+    margin: 0 0 15px;
+    font-size: 0.85rem;
+}
+
+//*-----------------------------------------
+//* FitVids
+//*-----------------------------------------
+.fluid-width-video-wrapper {
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

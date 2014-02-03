@@ -1,0 +1,26 @@
+<div id="at_header">
+    <div class="row">
+        <div class="medium-4 columns">
+            <div class="at_logo_container">
+                {{#if @blog.logo}}
+                    <a href="{{@blog.url}}"><img class="at_logo_img" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                    {{else}}
+                        <a href="{{@blog.url}}">
+                {{/if}}
+                    <span class="at_logo_text">{{@blog.title}}</span></a>
+            </div>
+        </div>
+        <div class="medium-4 columns text-right hide-for-small-only">
+            <div class="at_icon_menu">
+                <a class="at_icon_menu_item" href="{{@blog.url}}/about" data-tooltip class="has-tip" title="About"><span class="fa fa-bar-chart-o"></span></a>
+                <a class="at_icon_menu_item" href="{{@blog.url}}/typography" data-tooltip class="has-tip" title="Typography"><span class="fa fa-file-text"></span></a>
+                <a class="at_icon_menu_item" href="{{@blog.url}}/documentation" data-tooltip class="has-tip" title="Documentation"><span class="fa fa-book"></span></a>
+                <a class="at_icon_menu_item" href="{{@blog.url}}/faq" data-tooltip class="has-tip" title="Frequently Asked Questions"><span class="fa fa-question-circle"></span></a>
+                <a class="at_icon_menu_item" href="https://github.com/axiantheme/ghostion/archive/master.zip" data-tooltip class="has-tip" title="Download"><span class="fa fa-cloud-download"></span></a>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            {{> widgets/at_search }}
+        </div>
+    </div>
+</div>

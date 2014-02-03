@@ -1,0 +1,36 @@
+<div id="at_mainbody" class="at_post" role="main">
+    <div class="row">
+        <div class="large-12 columns">
+            {{#post}}
+            <div class="at_block">
+                <article class="{{post_class}}">
+                    <div class="at_post_content">
+                        {{content}}
+                    </div>
+                    <h3>About Author</h3>
+                    <div class="at_author">
+                        <div class="row">
+                            <div class="medium-2 columns show-for-medium-up">
+                                <div class="at_author_image">
+                                    <img src="{{author.image}}" alt="{{author.name}}">
+                                </div>
+                            </div>
+                            <div class="medium-10 columns">
+                                <div class="at_author_name">
+                                    <h3>{{author.name}}</h3>
+                                </div>
+                                <div class="at_author_bio">
+                                    <p>{{author.bio}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="at_post_comments">
+                        {{> widgets/at_disqus }}
+                    </div>
+                </article>
+            </div>
+            {{/post}}
+        </div>
+    </div>
+</div>

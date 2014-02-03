@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Stylesheet }}
+    <link rel="stylesheet" href="/assets/css/ghostion.min.css" />
+
+    {{! Remove the <!-- --> below to load the custom stylesheet }}
+    <!-- <link rel="stylesheet" href="/assets/css/ghostion.custom.css" /> -->
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div id="at_page_surround">
+        <div id="at_body">
+            {{{ body }}}
+        </div>
+    </div>
+
+    {{! The main JavaScript file for Ghostion }}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery-2.1.0.min.js"><\/script>')</script>
+
+    <script>
+        /*** CONFIGURATION VARIABLES: EDIT THE VALUES BELOW FOR THEME CONFIGURATION ***/
+        var ghostionConfig = {
+            site_url:                       "ghostion.ghostdemo.axiantheme.com",
+            google_fonts_family:            "Open+Sans:400,400italic,700,700italic",
+            google_analytics_tracking_id:   "UA-45630355-2",
+            disqus_shortname:               "ghostion"
+        };
+    </script>
+    <script src="/assets/js/ghostion.min.js"></script>
+</body>
+</html>

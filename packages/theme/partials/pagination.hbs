@@ -1,0 +1,23 @@
+<div id="at_pagination">
+    <div class="row">
+        <div class="large-4 small-3 columns text-left">
+            <div class="at_block">
+                {{#if prev}}
+                    <a class="at_pagination_item at_newer_posts" href="{{pageUrl prev}}"><span class="fa fa-arrow-circle-o-left"></span> <span class="hide-for-small-only">Newer Posts</span></a>
+                {{/if}}
+            </div>
+        </div>
+        <div class="large-4 small-6 columns text-center">
+            <div class="at_block">
+                <span class="at_pagination_item at_page_number">Page {{page}} of {{pages}}</span>
+            </div>
+        </div>
+        <div class="large-4 small-3 columns text-right">
+            <div class="at_block">
+                {{#if next}}
+                    <a class="at_pagination_item at_older_posts" href="{{pageUrl next}}"><span class="hide-for-small-only">Older Posts</span> <span class="fa fa-arrow-circle-o-right"></span></a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

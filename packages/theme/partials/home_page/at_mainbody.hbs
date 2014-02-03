@@ -1,0 +1,27 @@
+<div id="at_mainbody" class="at_frontpage" role="main">
+    <div class="row">
+        <div class="large-12 columns">
+            {{#foreach posts}}
+                <article class="{{post_class}} at_block">
+                    <div class="at_post_header">
+                        <h2 class="at_post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                    </div>
+                    <div class="at_post_meta">
+                        <span class="at_featured_post"><span class="fa fa-bookmark"></span> <span>Featured</span></span>
+                        <span class="at_post_author"><span class="fa fa-user"></span> {{author}}</span>
+                        <time class="at_post_time" datetime="{{date format='YYYY-MM-DD'}}"><span class="fa fa-calendar"></span> {{date format="DD MMM YYYY"}}</time>
+                        <span class="at_post_tags">{{#if tags}}<span class="fa fa-tags"></span>{{/if}} {{tags}}</span>
+                    </div>
+                    <div class="at_post_excerpt">
+                        <p><a href="{{url}}">{{content words="0"}}</a></p>
+                        <p>{{excerpt characters="350"}}&hellip;</p>
+                        <a href="{{url}}" class="button tiny radius">Read More</a>
+                    </div>
+                </article>
+            {{/foreach}}
+        </div>
+    </div>
+</div>
+
+{{! Pagination }}
+{{pagination}}

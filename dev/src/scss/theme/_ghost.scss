@@ -1,0 +1,79 @@
+@import "variables";
+
+//*-----------------------------------------
+//* Post
+//*-----------------------------------------
+.at_post_meta {
+	color: lighten($base_text_color, 35%);
+	font-size: $base_font_size - 2;
+	margin-bottom: 1rem;
+	.post-template & {
+		color: fade-out($showcase_text_color, 0.5)
+	}
+}
+.at_post_title {
+    line-height: 2.8rem;
+    margin: 0 0 5px 0;
+    letter-spacing: -1px;
+    font-weight: normal;
+    .post-template & {
+    	font-weight: 500;
+    	margin: 0 0 10px 0;
+    }
+	@media #{$small-only} {
+		line-height: 2.2rem;
+	}
+}
+.at_post_author, .at_post_time, .at_post_tags {
+	display: inline-block;
+	margin-right: 15px;
+	@media #{$small-only} {
+		display: block;
+	}
+}
+.at_post_tags {
+	margin-right: 0;
+}
+.at_post_share_title {
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+.at_featured_post {
+	display: none;
+	.featured & {
+		display: inline-block;
+	    color: $featured_label_color;
+	    margin-right: 15px;
+	}
+}
+.at_post_share_icon span {
+	font-size: 2rem;
+	margin: 0 3px;
+	color: $showcase_text_color;
+	text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
+	opacity: 0.5;
+	@include transition(all 0.2s ease-in-out);
+	&:hover {
+		opacity: 1;
+	}
+}
+.at_author {
+	color: tint($primary_color, 40%);
+	background: tint($primary_color, 90%);
+    border: 1px solid tint($primary_color, 80%);
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.at_author_name h3 {
+	color: tint($primary_color, 30%);
+	font-weight: 500;
+}
+.at_author_image {
+	img {
+		background: tint($primary_color, 50%);
+		border: 1px solid tint($primary_color, 40%);
+		padding: 5px;
+		border-radius: 100%;
+	}
+}
