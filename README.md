@@ -2,6 +2,10 @@
 
 **Ghostion** is a free Ghost theme powered by Foundation 5 framework and Bourbon Sass Mixins Library. The theme presents a simple responsive design and packed with all Foundation 5 features to make your Ghost blog powerful. Combined with Bourbon, a simple and lightweight mixin library for Sass, writing CSS is never faster and easier than ever before.
 
+### [Ghostion Demo](http://ghostion.ghostdemo.axiantheme.com/)
+
+<br />
+
 ![Ghostion](http://ghostdemo.axiantheme.com/ghostion/demo/overview.jpg)
 
 Ghostion is a lightweight and speed optimized theme for Ghost. Ghostion theme gets Grade A for both PageSpeed and YSlow reported by [GTmetrix](http://gtmetrix.com/reports/ghostion.ghostdemo.axiantheme.com/bntLnnuI).
