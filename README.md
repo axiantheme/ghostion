@@ -55,18 +55,18 @@ FontAwesome gives you scalable vector icons that can instantly be customized —
 
 Ghostion uses the asynchronous [Google Analytics](http://www.google.com/analytics/) tracking code, the fastest and most reliable tracking code Google Analytics offers.
 
-#### FitVids.JS
+#### FitVids.js
 
-A lightweight, easy-to-use jQuery plugin for fluid width video embeds, to achieve fluid width videos in your responsive blog. [FitVids.JS](http://fitvidsjs.com/) support YouTube, Vimeo, Blip.tv, Viddler, Kickstarter, and even your own video vendor.
+A lightweight, easy-to-use jQuery plugin for fluid width video embeds, to achieve fluid width videos in your responsive blog. [FitVids.js](http://fitvidsjs.com/) support YouTube, Vimeo, Blip.tv, Viddler, Kickstarter, and even your own video vendor.
 
 #### Disqus
 
 [Disqus](http://disqus.com/) makes commenting easier and more interactive, while connecting your blog and your commenters across a thriving discussion community. The Disqus widget for Ghostion seamlessly integrates with your blog post using the Disqus API.
 
-#### Highlight.JS
+#### Highlight.js
 
 [Highlight.js](http://highlightjs.org/) highlights syntax in code examples on Ghostion blog. It's very easy to use because it works automatically: finds blocks of code, detects a language, highlights it.
 
-#### Gulp.JS
+#### Gulp.js
 
 [Gulp](http://gulpjs.com/) is an intuitive, code-over-configuration, streaming build system. We use Gulp to build Ghostion theme pacakge and all its related files, including the documentation, DemoBuilder, and the source files. Please check our [Documentation](/documentation) to learn more how to customize and build Ghostion theme using Gulp.
