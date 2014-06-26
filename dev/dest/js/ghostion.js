@@ -127,7 +127,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
   for(; lastTime < vendors.length && !requestAnimationFrame; lastTime++) {
     requestAnimationFrame = window[ vendors[lastTime] + "RequestAnimationFrame" ];
     cancelAnimationFrame = cancelAnimationFrame ||
-      window[ vendors[lastTime] + "CancelAnimationFrame" ] || 
+      window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
       window[ vendors[lastTime] + "CancelRequestAnimationFrame" ];
   }
 
@@ -167,7 +167,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
     window.cancelAnimationFrame = function(id) {
       clearTimeout(id);
     };
-      
+
   }
 
   }( jQuery ));
@@ -350,7 +350,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
         } else {
           var query = Foundation.media_queries[media];
           if(query !== undefined) {
-            Foundation.stylesheet.insertRule('@media ' + 
+            Foundation.stylesheet.insertRule('@media ' +
               Foundation.media_queries[media] + '{ ' + rule + ' }');
           }
         }
@@ -906,8 +906,8 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
       touch_close_text: 'Tap To Close',
       disable_for_touch: false,
       tip_template : function (selector, content) {
-        return '<span data-selector="' + selector + '" class="' 
-          + Foundation.libs.tooltip.settings.tooltip_class.substring(1) 
+        return '<span data-selector="' + selector + '" class="'
+          + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
           + '">' + content + '<span class="nub"></span></span>';
       }
     },
@@ -924,7 +924,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
       if (Modernizr.touch) {
         $(this.scope)
           .off('.tooltip')
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
+          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
             '[data-tooltip]', function (e) {
             var settings = $.extend({}, self.settings, self.data_options($(this)));
             if (!settings.disable_for_touch) {
@@ -933,7 +933,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
               self.showOrCreateTip($(this));
             }
           })
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
+          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
             this.settings.tooltip_class, function (e) {
             e.preventDefault();
             $(this).fadeOut(150);
@@ -941,7 +941,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
       } else {
         $(this.scope)
           .off('.tooltip')
-          .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip', 
+          .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
             '[data-tooltip]', function (e) {
             var $this = $(this);
 
@@ -1008,7 +1008,7 @@ window.Modernizr=function(a,b,c){function d(a){t.cssText=a}function e(a,b){retur
       nub = tip.children('.nub');
       nubHeight = nub.outerHeight();
       nubWidth = nub.outerHeight();
-      
+
       tip.css({'width' : (width) ? width : 'auto'});
 
       objPos = function (obj, top, right, bottom, left, width) {
